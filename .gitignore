@@ -2,7 +2,7 @@
 .cache/
 *.swp
 *.bak
-
+.ropeproject/
 
 # Compiled source #
 ###################
