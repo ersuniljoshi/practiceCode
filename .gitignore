@@ -1,3 +1,9 @@
+include/
+lib/
+pip-selfcheck.json
+share/
+bin/
+local/
 .idea/
 .cache/
 *.swp
