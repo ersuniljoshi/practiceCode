@@ -71,11 +71,22 @@ class LinkedList:
             current = current._next
         return False
 
+
+    def occurenceCount(self, val):
+        current = self._head
+        count = 0
+        while current:
+            if current._value == val:
+                count +=1
+            current = current._next
+        return count
+
+
     def __str__(self):
         current = self._head
         list = ""
         while current:
-            list += str(current._value) +  "->"
+            list += str(current._value) + "->"
             current = current._next
         return list
 
@@ -89,12 +100,15 @@ l.addNodeAtHead(1)
 l.addNodeAtHead(0)
 l.addNodeAtHead(10)
 l.addNodeAtHead(19)
+l.addNodeAtHead(19)
 # l.addNodeAtHead(25)
 l.addNodeAtHead(30)
 
 print l
 print "Nth", l.getNthOfLinkedList(8)
-print "Middle", l.getMiddleOfLinkedList()
+print "occurrence count for ", l.occurenceCount(0)
+#  print "Nth", l.getNthOfLinkedList(8)
+#  print "Middle", l.getMiddleOfLinkedList()
 # l.removeNode(6)
 # print l.searchNode(16)
 # print "After", l
