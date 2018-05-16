@@ -19,6 +19,8 @@ class Node:
 
 
 class LinkedList:
+    __slots__ = '__head', '__size'
+
     def __init__(self):
         self.__head = None
         self.__size = 0
@@ -39,6 +41,7 @@ class LinkedList:
         current = self.__head
         while current is not None:
             if current.getData() == item:
+                pass
 
     def printLL(self):
         current = self.__head
@@ -53,6 +56,8 @@ class LinkedList:
 if __name__ == "__main__":
     mylist = LinkedList()
     mylist.addNode(5)
+    import pudb
+    pudb.settrace()
     mylist.addNode(5)
     mylist.addNode(4)
     mylist.addNode(9)
