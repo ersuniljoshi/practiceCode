@@ -31,7 +31,7 @@ class LinkedList:
 
     def removeNode(self, value):
         if self.isempty():
-           print "Linkedlist is empty"
+           print ("Linkedlist is empty")
            return False
         else:
             current = self._head
@@ -104,9 +104,10 @@ l.addNodeAtHead(19)
 # l.addNodeAtHead(25)
 l.addNodeAtHead(30)
 
-print l
-print "Nth", l.getNthOfLinkedList(8)
-print "occurrence count for ", l.occurenceCount(0)
+print(l)
+print ("Nth", l.getNthOfLinkedList(8))
+print ("occurrence count for ", l.occurenceCount(0))
+
 #  print "Nth", l.getNthOfLinkedList(8)
 #  print "Middle", l.getMiddleOfLinkedList()
 # l.removeNode(6)
