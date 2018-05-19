@@ -43,8 +43,8 @@ class fraction(object):
 
 f1 = fraction(1, 2)
 f2 = fraction(2, 4)
-print f1 + f2
-print f1 - f2
-print f1 * f2
-print f1 / f2
-print f1 == f2
+print ( f1 + f2 )
+print ( f1 - f2 )
+print ( f1 * f2 )
+print ( f1 / f2 )
+print ( f1 == f2 )

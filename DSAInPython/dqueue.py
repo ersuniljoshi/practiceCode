@@ -7,7 +7,7 @@ class dqueue(object):
         if len(self.q) > 0:
             return self.q.pop(0)
         else:
-            print "Empty Queue"
+            print ( "Empty Queue" )
             return None
 
 
@@ -15,7 +15,7 @@ class dqueue(object):
         if len(self.q) > 0:
             return self.q.pop()
         else:
-            print "Empty Queue"
+            print ( "Empty Queue" )
             return None
 
     def fenqueue(self, value):
@@ -40,7 +40,7 @@ dq.fenqueue(4)
 dq.fenqueue(5)
 dq.fenqueue(6)
 dq.fenqueue(8)
-print dq.fdqueue()
-print dq.rdqueue()
+print ( dq.fdqueue() )
+print ( dq.rdqueue() )
 
 

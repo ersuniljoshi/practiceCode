@@ -22,20 +22,15 @@ class MyQueue:
     def size(self):
         return self.ens1.size() + self.des2.size()
 
-
 q = MyQueue()
 q.enqueue(15)
 q.enqueue(5)
 q.enqueue(6)
 q.enqueue(16)
 q.enqueue(26)
-print q.dequeue()
-print q.dequeue()
-print q.dequeue()
-print q.dequeue()
-print q.dequeue()
-print q.dequeue()
-
-
-
-
+print ( q.dequeue() )
+print ( q.dequeue() )
+print ( q.dequeue() )
+print ( q.dequeue() )
+print ( q.dequeue() )
+print ( q.dequeue() )
