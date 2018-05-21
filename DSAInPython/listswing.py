@@ -10,4 +10,4 @@ def swing(arr):
 
 
 l = [4, 3 ,7 , 8 ,6 ,2, 1]
-print swing(l)
+print ( swing(l) )

@@ -14,4 +14,4 @@ def reverseNumber(num):
         rev = str(s.pop()) + rev
     return rev
 
-print reverseNumber(365)
+print(  reverseNumber(365) )
