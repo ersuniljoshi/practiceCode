@@ -13,4 +13,4 @@ class TestClass(object):
     pass
 
 x = TestClass()
-print x
+print (x)

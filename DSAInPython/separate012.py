@@ -15,4 +15,4 @@ def separate0n1(arr):
             r -=1
     return arr
 
-print separate0n1([0 ,1 , 2, 2, 1, 0,2,0,1,1, 1,1, 0, 1, 1,0,0])
+print ( separate0n1([0 ,1 , 2, 2, 1, 0,2,0,1,1, 1,1, 0, 1, 1,0,0]) )
