@@ -1,8 +1,7 @@
-a = [1, 9, 5, 3, 2, 6, 7, 11]
-a= [1, 3, 2, 4, 7, 6, 9, 10]
+a = [1, 3, 2, 4, 7, 6, 9, 10]
 l = 0
 r = len(a) -1
-print "Before", a
+print("Before", a)
 while l < r:
     if a[l] % 2 == 0:
         l += 1
@@ -14,6 +13,4 @@ while l < r:
         else:
             r -= 1
 
-print "After", a
-
-
+print("After", a)

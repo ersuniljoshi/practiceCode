@@ -46,7 +46,7 @@ class LinkedList:
     def printLL(self):
         current = self.__head
         while current is not None:
-            print "{0}->".format(current.getData()),
+            print("{0}->".format(current.getData()),)
             current = current.getNext()
 
     def size(self):

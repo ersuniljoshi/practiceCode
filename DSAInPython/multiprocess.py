@@ -3,7 +3,7 @@ from multiprocessing import Process, Pipe, Queue, Lock
 
 def square(n, l):
     #l.acquire()
-    print "Square of {} is {}".format(n, n*n)
+    print ("Square of {} is {}".format(n, n*n))
     l.send(n*n)
     #l.release()
 
@@ -15,4 +15,4 @@ for i in range(0,6):
     p = Process(target=square,args=(i,c_con))
     p.start()
     p.join()
-    print "Pipe", p_con.recv()
+    print ("Pipe", p_con.recv())

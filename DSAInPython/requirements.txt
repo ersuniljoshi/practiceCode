@@ -13,3 +13,4 @@ typing==3.6.4
 urllib3==1.22
 wcwidth==0.1.7
 pudb
+requests

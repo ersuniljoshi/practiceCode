@@ -4,7 +4,7 @@ from pythonds.basic.stack import Stack
 def reverseNumber(num):
     s = Stack()
     while num:
-        s.push(num%10)
+        s.push(num % 10)
         num = num // 10
         # print s
 
@@ -14,4 +14,5 @@ def reverseNumber(num):
         rev = str(s.pop()) + rev
     return rev
 
-print(  reverseNumber(365) )
+
+print(reverseNumber(365))

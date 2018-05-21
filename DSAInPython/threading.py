@@ -2,9 +2,8 @@ from threading  import Thread, Lock
 
 def sum(a, b, l):
     l.acquire()
-    print (a,b)
+    print(a,b)
     l.release()
-
 a = 5
 b = 5
 l = Lock()

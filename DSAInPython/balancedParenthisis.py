@@ -1,5 +1,6 @@
 import myStack
 
+
 def matches(close,open):
     sampleOpen = "({["
     sampleClose = ")}]"
@@ -20,5 +21,4 @@ def matchParenthesis(exp):
                     balanced = False
     return balanced
 
-print ( str(matchParenthesis("a")) )
-
+print( str(matchParenthesis("a")))

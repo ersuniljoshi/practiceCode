@@ -7,23 +7,21 @@ class dqueue(object):
         if len(self.q) > 0:
             return self.q.pop(0)
         else:
-            print ( "Empty Queue" )
+            print("Empty Queue")
             return None
-
 
     def rdqueue(self):
         if len(self.q) > 0:
             return self.q.pop()
         else:
-            print ( "Empty Queue" )
+            print("Empty Queue")
             return None
 
     def fenqueue(self, value):
-        self.q.insert(0,value)
+        self.q.insert(0, value)
 
     def renqueue(self, value):
         self.q.append(value)
-
 
     def size(self):
         return len(self.q)
@@ -40,7 +38,5 @@ dq.fenqueue(4)
 dq.fenqueue(5)
 dq.fenqueue(6)
 dq.fenqueue(8)
-print ( dq.fdqueue() )
-print ( dq.rdqueue() )
-
-
+print(dq.fdqueue())
+print(dq.rdqueue())
