@@ -1,5 +1,6 @@
 from pythonds.basic.queue import Queue
 
+
 class MyStack:
 
     def __init__(self):
@@ -11,7 +12,7 @@ class MyStack:
 
     def pop(self):
         if self.len() == 0:
-            print "Stack is empty"
+            print("Stack is empty")
             return
         if self.q2.isEmpty():
             while self.q1.size() != 1:
@@ -32,8 +33,8 @@ s.push(6)
 s.push(7)
 s.push(8)
 s.push(10)
-print s.pop()
-print s.pop()
-print s.pop()
-print s.pop()
-print s.pop()
+print(s.pop())
+print(s.pop())
+print(s.pop())
+print(s.pop())
+print(s.pop())

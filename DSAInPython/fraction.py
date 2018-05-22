@@ -1,4 +1,3 @@
-
 def gcd(n1, n2):
     while n2:
         n1, n2 = n2, n1%n2
@@ -25,12 +24,10 @@ class fraction(object):
         newden = self.den*other.den
         return fraction(newnum, newden)
 
-
     def __div__(self, other):
         newnum = self.num* other.den
         newden = self.den*other.num
         return fraction(newnum, newden)
-
 
     def __mul__(self, other):
         newnum = self.num*other.num

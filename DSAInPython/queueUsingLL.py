@@ -41,11 +41,11 @@ class MyQueue:
 
 
 q = MyQueue()
-print q.isEmpty()
+print(q.isEmpty())
 q.enqueue(5)
 
 q.enqueue(6)
 q.enqueue(7)
-print q.dequeue()
-print q.isEmpty()
-print q.size()
+print(q.dequeue())
+print(q.isEmpty())
+print(q.size())
