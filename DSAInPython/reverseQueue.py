@@ -1,7 +1,6 @@
 from pythonds.basic.queue import Queue
 from pythonds.basic.stack import Stack
 
-
 myQ = Queue()
 myQ.enqueue(5)
 myQ.enqueue(6)

@@ -39,3 +39,6 @@ local/
 *.log
 *.sql
 *.sqlite
+
+
+tags
