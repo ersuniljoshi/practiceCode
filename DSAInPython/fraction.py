@@ -1,12 +1,9 @@
-def gcd(n1, n2):
-    while n2:
-        n1, n2 = n2, n1%n2
-    return n1
-
-class fraction(object):
-
+class Fraction(object):
+    '''
+    Fraction class implementation
+    '''
     def __init__(self, top, bottom):
-        gcdboth = gcd(top, bottom)
+        gcdboth = self.gcd(top, bottom)
         self.num = top//gcdboth
         self.den = bottom//gcdboth
 
@@ -16,32 +13,34 @@ class fraction(object):
     def __add__(self, other):
         newnum = self.num*other.den + self.den*other.num
         newden = self.den*other.den
-        return fraction(newnum, newden)
-
+        return Fraction(newnum, newden)
 
     def __sub__(self, other):
         newnum = self.num*other.den - self.den*other.num
         newden = self.den*other.den
-        return fraction(newnum, newden)
+        return Fraction(newnum, newden)
 
     def __div__(self, other):
-        newnum = self.num* other.den
-        newden = self.den*other.num
-        return fraction(newnum, newden)
+        newnum = self.num * other.den
+        newden = self.den * other.num
+        return Fraction(newnum, newden)
 
     def __mul__(self, other):
         newnum = self.num*other.num
         newden = self.den*other.den
-        return fraction(newnum, newden)
+        return Fraction(newnum, newden)
 
     def __eq__(self, other):
         return self.num*other.den == self.den*other.num
 
+    def gcd(self, n1, n2):
+        while n2:
+            n1, n2 = n2, n1 % n2
+        return n1
 
-f1 = fraction(1, 2)
-f2 = fraction(2, 4)
-print ( f1 + f2 )
-print ( f1 - f2 )
-print ( f1 * f2 )
-print ( f1 // f2 )
-print ( f1 == f2 )
+f1 = Fraction(1, 2)
+f2 = Fraction(2, 4)
+print(f1 + f2)
+print(f1 - f2)
+print(f1 * f2)
+print(f1 == f2)

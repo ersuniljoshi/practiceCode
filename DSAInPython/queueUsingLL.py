@@ -43,7 +43,6 @@ class MyQueue:
 q = MyQueue()
 print(q.isEmpty())
 q.enqueue(5)
-
 q.enqueue(6)
 q.enqueue(7)
 print(q.dequeue())

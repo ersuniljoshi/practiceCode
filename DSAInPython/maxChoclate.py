@@ -12,8 +12,5 @@ def maxChoclate(r, w):
             return total_choc
     return total_choc
 
-
-rs = 6
+rs = 9
 print maxChoclate(rs, w=3)
-
-

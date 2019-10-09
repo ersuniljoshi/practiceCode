@@ -1,6 +1,5 @@
 from pythonds.basic.queue import Queue
 
-
 class MyStack:
 
     def __init__(self):

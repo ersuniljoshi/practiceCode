@@ -1,3 +1,6 @@
+import os
+import requests
+
 def bold(fn):
     def karbold(*args):
         return "<b>" + fn(*args) + "</b>"
@@ -14,6 +17,5 @@ def italic(fn):
 @italic
 def html(string):
     return string
-
 
 print(html("Jackpot,Lag gya"))

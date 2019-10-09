@@ -1,7 +1,6 @@
 import myQueue
 
 # Hot potato problem
-
 def implementationOfJosephus(nameList, times):
     q = myQueue.Queue()
     for value in nameList:
@@ -13,7 +12,6 @@ def implementationOfJosephus(nameList, times):
         q.Dqueue()
 
     return q.Dqueue()
-
 
 names = ['sunil', 'soni', 'DPJ',
          'Urmila', 'Pratibha', 'Dinesh',

@@ -1,17 +1,17 @@
 import myStack
 import os
 
-def matches(close, open):
-    sampleOpen = "({["
-    sampleClose = ")}]"
-    return sampleClose.index(close) == sampleOpen.index(open)
+sampleOpen = "({["
+sampleClose = ")}]"
 
+def matches(cl, op):
+    return sampleClose.index(cl) == sampleOpen.index(op)
 
 def matchParenthesis(exp):
     s = myStack.Stack()
     balanced = True
     for sym in exp:
-        if sym in "({[":
+        if sym in sampleOpen:
             s.push(sym)
         else:
             if s.isEmpty():
@@ -22,5 +22,4 @@ def matchParenthesis(exp):
                     balanced = False
     return balanced
 
-
-print(str(matchParenthesis("a")))
+print(str(matchParenthesis("()a")))

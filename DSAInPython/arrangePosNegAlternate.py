@@ -1,4 +1,5 @@
 '''
+import os
 
 Rearrange positive and negative numbers in O(n) time and O(1) extra space
 
@@ -12,8 +13,13 @@ then the output should be [9, -7, 8, -3, 5, -1, 2, 4, 6]
 '''
 
 
-def arrangePosNegAlt(arr):
+def arrangeposnegalt():
+    '''
+    :return sign
+    '''
     sign = False
-    pass
+    return sign
 
-l = [-1, 2, -3, 4, 5, 6, -7, 8, 9]
+
+L = [-1, 2, -3, 4, 5, 6, -7, 8, 9]
+print L

@@ -1,6 +1,5 @@
 from pythonds.basic.queue import Queue
 
-
 class MyStack:
 
     def __init__(self):
@@ -21,7 +20,6 @@ class MyStack:
 
     def isEmpty(self):
         return self.len() == 0
-
 
 s = MyStack()
 s.push(2)

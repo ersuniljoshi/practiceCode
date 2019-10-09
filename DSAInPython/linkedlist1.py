@@ -1,5 +1,4 @@
 class Node:
-
     __slots__ = '_value', '_next'
     def __init__(self, value):
         self._value = value
@@ -106,10 +105,4 @@ l.addNodeAtHead(30)
 
 print(l)
 print ("Nth", l.getNthOfLinkedList(8))
-print ("occurrence count for ", l.occurenceCount(0))
-
-#  print "Nth", l.getNthOfLinkedList(8)
-#  print "Middle", l.getMiddleOfLinkedList()
-# l.removeNode(6)
-# print l.searchNode(16)
-# print "After", l
+print ("occurrence count for ", l.occurenceCount(19))
